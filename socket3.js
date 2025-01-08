@@ -7,7 +7,7 @@ function sendText() {
   const msg = {
     type: "channel",
     channel: "trendingcut/2",
-    date: "12",
+    date: Date.now(),
   };
   socket.send(JSON.stringify(msg));
 }
